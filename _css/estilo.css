@@ -1,0 +1,373 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* formatação dos parágrafos */
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* formatação dos titulos */
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 1px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #1d1616;
+    font-size: 10pt;
+    display: block;
+    margin-top: 1px;
+}
+
+
+/* formatação do corpo */
+
+body {
+    /* background-image: url("background.jpg"); IMAGEM */
+    background-color: #dddddd;
+    color: rgb(0, 0, 0)
+}
+
+
+/* formatação da interface (div) */
+
+div#interface {
+    width: 1100px;
+    /* delimita o tamanho da div */
+    background-color: #ffffff;
+    /* muda a cor do fundo da div interface*/
+    margin: -20px auto 0px auto;
+    /* cria uma margem no alto, direita, em baixo e esquerda respectivamente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+    /* A box-shadow propriedade anexa uma ou mais sombras a um elemento. */
+    padding: 10px 10px 10px 10px;
+    /* pode ser escrito assim também 'padding: 10px' já que todos os lados são iguais */
+    /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. */
+}
+
+
+/*Nota: O preenchimento cria espaço extra dentro de um elemento, enquanto a margem cria espaço extra ao redor de um elemento.*/
+
+
+/* formatação da imagem do óculos */
+
+#icone {
+    position: absolute;
+    /* define que a posição da imagem do óculos é relativa */
+    left: 1000px;
+    top: 70px;
+}
+
+
+/* formatação da logo "GOOGLE GLASS" */
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    /* cria uma linha divisória para o cabeçalho */
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+    padding-top: 0px;
+}
+
+
+/* formatação do cabeçalho "GOOGLE GLASS */
+
+header#cabecalho h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* formatação o cabeçalho "A REVOLUÇÃO DO GOOGLE ESTá ChEGANDO */
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/*background-color: rgb(0, 0, 0) define a cor do plano de fundo do site por rbg clássico
+ background-color: hsl(0, 0%, 0%) define a cor do plano de fundo do site por matiz, saturação e vibração
+ background-color: hsla(0, 0%, 0%, 1) define a cor do plano de fundo do site por matiz, saturação e vibração com transparência-->
+ color: #000000; representação de cor por hexadecimal 
+ color: rgb(0, 0, 0) representação de cor por rgb clássico
+ color: rgba(0, 0, 0, 0.7) representação de cor por rgb com transparência*/
+
+
+/* Formatação de Imagens com Legendas */
+
+
+/* formatação da  foto do homem e da mulher */
+
+figure.foto-legenda {
+    position: relative;
+    /* define como um elemento é posicionado em um documento */
+    border: 8px solid white;
+    /*define a borda de um elemento*/
+    box-shadow: 1px 1px 4px black;
+    /*  é utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas. Uma box-shadow é descrita pelo deslocamentos (offset) X e Y em relação ao elemento, desfoco e propagação do raio e cor. */
+}
+
+
+/* formatação do tamanho da foto do homem e da mulher */
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* formatação da legenda da foto do homem e da mulher */
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    /* O efeito de topdepende de como o elemento está posicionado (ou seja, o valor da positionpropriedade):
+    Quando positionestá definido como absoluteou fixed, a toppropriedade especifica a distância entre a borda superior do elemento e a borda superior do bloco que o contém.
+    Quando positionestá definido como relative, a toppropriedade especifica a distância em que a borda superior do elemento é movida abaixo de sua posição normal.
+    Quando positionestá definido como sticky, a toppropriedade é usada para calcular o retângulo de restrição de aderência.
+    Quando positionestá definido como static, a toppropriedade não tem efeito . */
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    box-sizing: border-box;
+    /* coloca a borda dentro da borda da imagem */
+    transition: opacity 0.5s;
+    /* cria uma transição pra ser usado no hover quando o mouse passar por cima */
+}
+
+
+/* formatação da passagem do mouse sobre a foto do homem e da mulher */
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+
+/* formatação do menu*/
+
+nav#menu {
+    display: block;
+    /* A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. */
+}
+
+
+/* formatação da lista de menu */
+
+nav#menu ul {
+    list-style: none;
+    /* some com os demarcadores */
+    text-transform: uppercase;
+    /* transforma todas as letras em maiusculo */
+    position: absolute;
+    /* qualquer posição da tela */
+    top: -20px;
+    left: 600px;
+}
+
+
+/* formatação dos dados do menu */
+
+nav#menu li {
+    display: inline-block;
+    /* coloca  lista do menu em uma mesma linha horizontalmente */
+    background-color: silver;
+    padding: 10px;
+    /* altera o tamanho do objeto */
+    margin: 2px;
+    /* cria uma margem entre os objetos */
+    transition: background-color 0.5s;
+    /* cria uma transição com 0.5s para o instanciamento do hover */
+}
+
+
+/* formatação da passagem do mouse sobre o menu */
+
+nav#menu li:hover {
+    background-color: #606060;
+    /* 'hover' recurso para colocar efeito quando passar o mouse por cima do botão, nesse caso sempre que o mouse passar por cima do botão ele muda a cor parqa #606060 */
+}
+
+
+/* formatação do texto "MENU PRINCIPAL" */
+
+nav#menu h1 {
+    display: none;
+    /* some com o 'menu principal' */
+}
+
+
+/* formatação do texto do menu */
+
+nav#menu a {
+    color: #000000;
+    /* muda a cor das ancoras dos links para preto */
+    text-decoration: none;
+    /* tira o sublinhado das ancoras */
+}
+
+
+/* formatação da passagem do mouse sobre o menu */
+
+#menu a:hover {
+    color: #ffffff;
+    /* muda a cor das ancoras para branco quando o mouse passa pelo botão */
+}
+
+
+/* formatação do corpo do texto */
+
+section#corpo {
+    display: block;
+    /* coloca o elemento em um bloco */
+    width: 640px;
+    /* define o tamanho */
+    float: left;
+    /* define em que ponto o bloco irá ficar */
+    border-right: 1px solid #606060;
+    padding: 20px;
+}
+
+
+/* formatação da interface (article) */
+
+article#noticia h2 {
+    font-size: 16pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 1px 5px 10px;
+    margin: 10px 1px 10px 0px;
+    font-variant: small-caps;
+}
+
+
+/* formatação da tabela */
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspec td.rightcolumn {
+    color: #ffffff;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+#tabelaspec td.leftcolumn {
+    background-color: #cecece;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
+
+/* aqui termina a formatação das tabelas*/
+
+
+/* formatação do aside, do texto lateral */
+
+aside#lateral {
+    display: block;
+    /* coloca o elemento em um bloco */
+    width: 390px;
+    /* define o tamanho */
+    float: left;
+    /* define em que ponto o bloco irá ficar */
+    padding: 10px;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+#lateral h2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #606060;
+    font-size: 16pt;
+    font-variant: small-caps;
+    color: white;
+    padding: 5px 0px 5px 10px;
+    margin-top: 0px;
+}
+
+
+/* formatação do rodapé */
+
+footer#rodape {
+    clear: both;
+    /* A propriedade clear do CSS especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). Essa propriedade se aplica à elementos flutuantes ou não flutuantes. */
+    border-top: 1px solid #606060;
+    padding: 10px;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+nav#roda a {
+    color: rgb(126, 85, 221);
+    text-decoration: none;
+}
+
+
+/* fim da formatação do rodapé */
+
+
+/* formatação dos links */
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Teste Java Script 02</title>
+    <meta charset="utf-8" />
+    <script>
+        var quebrada = false;
+
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+                document.getElementById("luz").src = "../imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+            // O método getElementById() retorna o elemento que tem o atributo ID com o valor especificado. Este método é um dos métodos mais comuns no DOM HTML, e é usado quase toda vez que você quer manipular, ou obter informações de um elemento em seu documento.//
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Acenda a lâmpada</h1>
+    <img src="../_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+    <!---onmousemove chama a função quando o mouse passa pela imagem--->
+    <!--- onmouseout chama a função quando o mouse não passa pela imagem-->
+    <!---<img src="../_imagens/lampada-apagada.jpg" onclick="acendeLampada()">-->
+    <!--- onclick chama a função quando é dado um clique na imagem-->
+</body>
+
+</html>

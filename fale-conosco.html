@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Doctype não é uma tag do HTML. O Doctype HTML é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo. Essa declaração vem antes das tags HTML, portanto, geralmente é apresentada na primeira linha de um código. -->
+<html lang="pt-br">
+<!--tag principal, ela marca o início e o final do documento.também informa a linguagem usada na escrita do site'lang' é o atributo da tag e 'pt-br' é o valor do atributo-->
+
+<head>
+    <!--tag usada para delimitar o cabeçalho do documento. Dentro dela outras tags de cabeçalho serão usadas, como o title, meta, link, entre outros.-->
+    <meta charset="UTF-8">
+    <!--metadado que habilita a representação de qualque caractere de qualquer idioma, como acentuação-->
+    <title>Tudo sobre o Google Glass</title>
+    <!--tag usada para indicar o título do documento.-->
+
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <!--O Elemento HTML <link> especifica as relações entre o documento atual e um recurso externo. Possíveis usos para este elemento incluem a definição de uma estrutura relacional para navegação. Este elemento é mais usado para vincular as folhas de estilo.-->
+
+</head>
+<script src="_javascript/funcoes.js"></script>
+<body>
+    <!--tag usada para definir o corpo do documento. Dentro dela serão colocadas as tags que irão compor a nossa página-->
+    <div id="interface">
+        <!--O elemento HTML Div define uma divisão ou seção em um documento HTML.-->
+        <header id="cabecalho">
+            <!--O elemento HTML <header> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.-->
+            <hgroup>
+                <!--matadado com função de agrupar dois ou mais elementos h1 até ,h6 organizando-os em uma hierarquia de títulos e subtítulos.-->
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/contato.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('-imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+
+            </nav>
+            <!-- a tag <nav> cria um menu de navegação-->
+            <!--ol type="1" starts="3" (orderd lists) cria listas numeradas que pordem ser modificadas, ul (unorderd lists) ul type="disc" cria listas não numeradas com demarcadores, li (list items) são itens da lista-->
+        </header>
+
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+
+Identificação do Usuário
+    Nome:
+    Senha:
+    E-mail:
+    Sexo:
+        - Masculino
+        - Feminino
+    Data de Nascimento:
+
+Endereço do Usuário
+    Logradouro:
+    Número:
+    Estado:
+    Cidade:
+
+Mensagem do Usuário
+    Grau de Urgência:
+    Mensagem:
+
+Quero um Google Glass
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+
+
+[BOTÃO ENVIAR]
+
+<footer id="rodape">
+    <p>Copyright &copy; 2020 - by Alexandre Oliveira <br><a id="fb" href="https://facebook.com/lexandre0" target="_blank"> Facebook </a> | <a id="tw" href="https://twitter.com/lexandre0" target="_blank"> Twitter</a></p>
+</footer>
+</nav>
+<!-- A <footer>tag define um rodapé para um documento ou seção.
+Um <footer> elemento normalmente contém:
+- informação de autoria   
+- Informações sobre direitos autorais
+- Informações de Contato
+- Mapa do site
+- voltar ao topo links
+- documentos relacionados
+- Você pode ter vários <footer>elementos em um documento. -->
+
+<!---<h1>Símbolos Especiais</h1>
+<p>
+&lt; &gt; &le; &ge; <br> &pound; &yen; &euro; <br> &copy; &reg; &trade; <br> &permil; &sum; &infin; &times; &oplus; &plusmn; &ne; <br> &delta; &lambda; &omega; &phi; <br> &larr; &rarr; &uarr; &darr; &harr; <br> &spades; &clubs; &hearts; &diams;
+</p>--->
+</div>
+</body>
+
+</html>
