@@ -24,56 +24,62 @@
         <!--O elemento HTML Div define uma divisão ou seção em um documento HTML.-->
         <header id="cabecalho">
             <!--O elemento HTML <header> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.-->
-            <hgroup>
-                <!--matadado com função de agrupar dois ou mais elementos h1 até ,h6 organizando-os em uma hierarquia de títulos e subtítulos.-->
-                <h1>Google Glass</h1>
-                <h2>A revolução do Google está chegando</h2>
-            </hgroup>
+                <hgroup>
+                    <!--matadado com função de agrupar dois ou mais elementos h1 até ,h6 organizando-os em uma hierarquia de títulos e subtítulos.-->
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
 
-            <img id="icone" src="_imagens/multimidia.png">
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul type="disc">
-                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
+                <img id="icone" src="_imagens/multimidia.png">
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul type="disc">
+                        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
                             href="index.html">Home</a></li>
-                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-                        onmouseout="mudaFoto('-imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
-                            href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-                        onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
-                        <a href="fale-conosco.html">Fale conosco</a>
-                    </li>
-                </ul>
+                            <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                            onmouseout="mudaFoto('-imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                            <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a
+                                href="fotos.html">Fotos</a></li>
+                                <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                                onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+                                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')">
+                                    <a href="fale-conosco.html">Fale conosco</a>
+                                </li>
+                            </ul>
 
-            </nav>
-            <!-- a tag <nav> cria um menu de navegação-->
-            <!--ol type="1" starts="3" (orderd lists) cria listas numeradas que pordem ser modificadas, ul (unorderd lists) ul type="disc" cria listas não numeradas com demarcadores, li (list items) são itens da lista-->
-        </header>
+                        </nav>
+                        <!-- a tag <nav> cria um menu de navegação-->
+                            <!--ol type="1" starts="3" (orderd lists) cria listas numeradas que pordem ser modificadas, ul (unorderd lists) ul type="disc" cria listas não numeradas com demarcadores, li (list items) são itens da lista-->
+                        </header>
 
-        <section id="corpo-full">
-            <article id="noticia">
-                <header id="cabecalho-artigo">
-                    <hgroup>
-                        <h3 id="info">Glass > Multimídia</h3>
-                        <h1> Sons e Vídeos</h1>
-                        <h3> por Alexandre Oliveira | Atualizado em 01/05/2013</h3>
-                    </hgroup>
-                </header>
-                Áudio e Vídeo
+                        <section id="corpo-full">
+                            <article id="noticia">
+                                <header id="cabecalho-artigo">
+                                    <hgroup>
+                                        <h3 id="info">Glass > Multimídia</h3>
+                                        <h1> Sons e Vídeos</h1>
+                                        <h3> por Alexandre Oliveira | Atualizado em 01/05/2013</h3>
+                                    </hgroup>
+                                </header>
 
-                [AQUI ENTRA UM VÍDEO]
-                [AQUI ENTRA UM ÁUDIO]
-            </article>
-        </section>
+                                <div id="tv-radio">
+                                    <audio id="musica" controls="controls">
+                                        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                                        <source src="_media/2009-lovers-carvings-bibio.m4a" type="audio/x-acc"/>
+                                        <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>
+                                        Desculpe, mas o arquivo não foi carregado
+                                    </audio>
+                                    <iframe id="filme" width="440" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </article>
+                        </section>
 
-        <footer id="rodape">
-            <p>Copyright &copy; 2020 - by Alexandre Oliveira <br><a id="fb" href="https://facebook.com/lexandre0"
-                    target="_blank"> Facebook </a> | <a id="tw" href="https://twitter.com/lexandre0" target="_blank">
-                    Twitter</a></p>
-        </footer>
-        </nav>
+                        <footer id="rodape">
+                            <p>Copyright &copy; 2020 - by Alexandre Oliveira <br><a id="fb" href="https://facebook.com/lexandre0"
+                                target="_blank"> Facebook </a> | <a id="tw" href="https://twitter.com/lexandre0" target="_blank">
+                                Twitter</a></p>
+                            </footer>
+                        </nav>
         <!-- A <footer>tag define um rodapé para um documento ou seção.
 Um <footer> elemento normalmente contém:
 - informação de autoria   
@@ -88,7 +94,7 @@ Um <footer> elemento normalmente contém:
 <p>
 &lt; &gt; &le; &ge; <br> &pound; &yen; &euro; <br> &copy; &reg; &trade; <br> &permil; &sum; &infin; &times; &oplus; &plusmn; &ne; <br> &delta; &lambda; &omega; &phi; <br> &larr; &rarr; &uarr; &darr; &harr; <br> &spades; &clubs; &hearts; &diams;
 </p>--->
-    </div>
+</div>
 </body>
 
 </html>

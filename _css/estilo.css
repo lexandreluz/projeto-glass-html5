@@ -10,6 +10,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+form{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
 /* formatação dos titulos */
 
 h1 {
@@ -371,3 +375,9 @@ a:hover {
     text-decoration: underline;
 }
 
+iframe#filme{
+    width: 480px;
+    display: block;
+    left: 800px;
+    position: relative;
+}
