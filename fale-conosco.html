@@ -11,10 +11,18 @@
     <!--tag usada para indicar o título do documento.-->
 
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/form.css" />
     <!--O Elemento HTML <link> especifica as relações entre o documento atual e um recurso externo. Possíveis usos para este elemento incluem a definição de uma estrutura relacional para navegação. Este elemento é mais usado para vincular as folhas de estilo.-->
 
 </head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQuant').value);
+        tot = qtd * 1500;
+        document.getElementById('cPreco').value = tot;
+    }
+</script>
 <body>
     <!--tag usada para definir o corpo do documento. Dentro dela serão colocadas as tags que irão compor a nossa página-->
     <div id="interface">
@@ -52,21 +60,21 @@
                                 <h3> por Alexandre Oliveira | Atualizado em 01/05/2013</h3>
                             </hgroup>
                         </header>
-                        <form id="formulario" method="post" action="mailto:alexandre.matheus.oliveira@gmail.com">
-                            <fieldset>
+                        <form id="formulario" method="post" action="mailto:alexandre.matheus.oliveira@gmail.com" oninput="calc_total();">
+                            <fieldset id="user">
                                 <legend>Identificação do Usuário</legend>
-                                <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome Completo"></p>
+                                <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="40" maxlength="50" placeholder="Nome Completo"></p>
                                 <p><label for="cSenha">Senha: </label><input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="Senha"></p>
-                                <p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="Email"></p>
-                                <fieldset><legend>Sexo:</legend>
+                                <p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail" size="40" maxlength="30" placeholder="Email"></p>
+                                <fieldset id="sexo"><legend>Sexo:</legend>
                                     <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br>
                                     <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></fieldset>
                                     <p><label for="cData">Data de Nascimento: <input type="date" name="tData" id="cData"></p>
                                     </fieldset>
-                                    <fieldset>
+                                    <fieldset id="adress">
                                         <legend>Endereço do Usuário</legend>
                                         <p><label for="cRua">Logradouro: </label><input type="text" name="tRua" id="cRua" size="20" maxlength="50" placeholder="Rua, Avenida, ..."></p>
-                                        <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="1" max="99999"></p>
+                                        <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="1" max="99999" placeholder="Número"></p>
                                         <p><label for="cEstado">Estado: </label>
                                             <select name="tEstado" id="cEstado">
                                                 <optgroup label="Região Norte">
@@ -312,19 +320,20 @@
                                                 <option value='Jaú'></option>
                                             </datalist>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="msg">
                                             <legend>Mensagem do Usuário</legend>
                                             <p><label for="cGrau">Grau de Urgência:</label> Mín <input type="range" name="tGrau" id="C=cGrau" min="0" max="10" step="1"> Máx</p>
-                                            <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                                            <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="55" rows="10" placeholder="Deixe aqui sua mensagem"></textarea></p>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="buy">
                                             <legend>Quero um Google Glass</legend>
-                                            <p>Gostaria de adquirir um Google Glass quando disponível?</p>
-                                            <p><label for="cCor">Cor:</label></p>
-                                            <p><label for="cQuant">Quantidade:</label></p>
-                                            <p><label for="cPreco">Preço Total: R$</label></p>
+                                            <p><input type="checkbox" name="tPed" id="cPed"><label for="cPed"> Gostaria de adquirir um Google Glass quando disponível?</label></p>
+                                            <p><label for="cCor">Cor: </label><input type="color" name="tCor" id="cCor" value="#ffffff"></p>
+                                            <p><label for="cQuant">Quantidade: </label><input type="number" name="tQuant" id="cQuant" min="0" max="10" value="0"></p>
+                                            <p><label for="cPreco">Preço Total: R$ </label><input type="text" name="tPreco" id="cPreco" placeholder="Total a pagar" readonly></p>
                                         </fieldset>
-                                        [BOTÃO ENVIAR] 
+                                        <!--<input type="submit" value="Enviar">-->
+                                        <input type="image" name="tBotao" src="_imagens/botao-enviar.png">
                                     </form>
                                 </article>
                             </section>
